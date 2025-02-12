@@ -63,3 +63,12 @@ CREATE TABLE ItemVenda (
 );
 ```
 ## Querys para inserção de dados fictícios
+1. ### Cliente
+```sql
+INSERT INTO Cliente (Nome, CPF, Telefone, Email) VALUES
+('Alexandre Afonso', '11111111111', '11111111111', 'alexandre@email.com'),
+('Carlos Henrique', '22222222222', '22222222222', 'carlos@email.com'),
+('Ewerlon Silva', '33333333333', '33333333333', 'ewerlon@email.com'),
+('Paulo Jefferson', '44444444444', '44444444444, 'paulo@email.com'),
+('Tomás Kangaza', '55555555555', '55555555555', 'tomas@email.com');
+```
