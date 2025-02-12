@@ -99,7 +99,7 @@ INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, Subtotal) VALUES
 (2, 3, 2, 15.80),  -- Carlos Henrique comprou 2 Óleos
 (2, 4, 4, 18.00),  -- Carlos Henrique comprou 4 Açúcares
 (3, 1, 1, 25.90),  -- Ewerlon Silva comprou 1 Arroz
-(4, 5, 1, 10.10).  -- Paulo Jefferson comprou 1 Coca-Cola 2L
+(4, 5, 1, 10.00).  -- Paulo Jefferson comprou 1 Coca-Cola 2L
 (5, 6, 1, 10.00);  -- Tomás Kangaza comprou 1 Fanta Laranja 2L
 ```
 ## Verificando os Dados
