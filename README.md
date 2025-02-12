@@ -72,3 +72,29 @@ INSERT INTO Cliente (Nome, CPF, Telefone, Email) VALUES
 ('Paulo Jefferson', '44444444444', '44444444444, 'paulo@email.com'),
 ('Tomás Kangaza', '55555555555', '55555555555', 'tomas@email.com');
 ```
+2. ### Produtos
+```sql
+INSERT INTO Produto (Nome, Preco, Estoque) VALUES
+('Arroz 5kg', 25.90, 50),
+('Feijão 1kg', 8.50, 100),
+('Óleo de Soja 900ml', 7.90, 80),
+('Açúcar 1kg', 4.50, 60);
+```
+3. ### Venda
+```sql
+INSERT INTO Venda (ClienteID, DataVenda, TotalVenda) VALUES
+(1, '2025-02-10 14:30:00', 42.30),
+(2, '2025-02-10 15:00:00', 33.80),
+(3, '2025-02-11 10:15:00', 25.90);
+```
+4. ### Venda
+```sql
+INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, Subtotal) VALUES
+(1, 1, 1, 25.90),  -- João comprou 1 arroz
+(1, 2, 2, 16.40),  -- João comprou 2 feijões
+(2, 3, 2, 15.80),  -- Maria comprou 2 óleos
+(2, 4, 4, 18.00),  -- Maria comprou 4 açúcares
+(3, 1, 1, 25.90);  -- Carlos comprou 1 arroz
+```
+
+
