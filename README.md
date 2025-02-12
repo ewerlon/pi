@@ -62,4 +62,4 @@ CREATE TABLE ItemVenda (
         REFERENCES Produto(ProdutoID) ON DELETE CASCADE
 );
 ```
-## Querys para inserção dados fictícios
+## Querys para inserção de dados fictícios
