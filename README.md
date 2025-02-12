@@ -17,3 +17,4 @@ Modelo relacional das tabelas normalizadas até a Terceira Forma Normal (3FN), g
 • Uma Venda pode ter muitos ItensVenda (1:N).
 
 • Um Produto pode estar em muitos ItensVenda (1:N).
+## Estrutura e Querys para criação das Tabelas
