@@ -146,7 +146,8 @@ JOIN Produto P ON IV.ProdutoID = P.ProdutoID
 GROUP BY P.Nome, P.Estoque
 ORDER BY TotalVendido DESC;
 ```
-
+### Conclusão
+Este banco de dados foi projetado para um sistema de PDV eficiente, garantindo integridade e consistência. O banco de dados foi testado em uma base do SQL Server 2008, garantindo sua funcionalidade.
 
 
 
