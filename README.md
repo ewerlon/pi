@@ -11,7 +11,4 @@ DER (Diagrama Entidade-Relacionamento) para um sistema de PDV (Ponto de Venda) c
        o Representa os produtos vendidos em cada venda.
 ## Relacionamentos
 Modelo relacional das tabelas normalizadas até a Terceira Forma Normal (3FN), garantindo que não há redundância e que todas as dependências funcionais estão devidamente organizadas.
-
-• Um Cliente pode ter muitas Vendas (1:N).
-• Uma Venda pode ter muitos ItensVenda (1:N).
-•	Um Produto pode estar em muitos ItensVenda (1:N).
+•	Um Cliente pode ter muitas Vendas (1:N).
