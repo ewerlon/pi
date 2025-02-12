@@ -18,6 +18,7 @@ Modelo relacional das tabelas normalizadas até a Terceira Forma Normal (3FN), g
 
 • Um Produto pode estar em muitos ItensVenda (1:N).
 ## Estrutura e Querys para criação das Tabelas
+### Cliente
 ```sql
 CREATE TABLE Cliente (
     ClienteID INT IDENTITY(1,1) PRIMARY KEY,
