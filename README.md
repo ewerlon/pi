@@ -119,5 +119,35 @@ SELECT V.VendaID, C.Nome AS Cliente, V.DataVenda, V.TotalVenda
 FROM Venda V
 JOIN Cliente C ON V.ClienteID = C.ClienteID;
 ```
+### Listar os itens de cada venda com detalhes do produto e do cliente
+Essa consulta exibe os produtos comprados em cada venda, junto com o nome do cliente e os valores.
+```sql
+SELECT V.VendaID, C.Nome AS Cliente, P.Nome AS Produto, IV.Quantidade, IV.Subtotal
+FROM ItemVenda IV
+JOIN Venda V ON IV.VendaID = V.VendaID
+JOIN Cliente C ON V.ClienteID = C.ClienteID
+JOIN Produto P ON IV.ProdutoID = P.ProdutoID;
+```
+### Total gasto por cada cliente em compras
+Essa consulta mostra o total gasto por cada cliente, ordenado do maior para o menor.
+```sql
+SELECT C.Nome AS Cliente, SUM(V.TotalVenda) AS TotalGasto
+FROM Venda V
+JOIN Cliente C ON V.ClienteID = C.ClienteID
+GROUP BY C.Nome
+ORDER BY TotalGasto DESC;
+```
+### Estoque atual dos produtos mais vendidos
+Exibe os produtos mais vendidos e o estoque atual disponível.
+```sql
+SELECT P.Nome AS Produto, SUM(IV.Quantidade) AS TotalVendido, P.Estoque
+FROM ItemVenda IV
+JOIN Produto P ON IV.ProdutoID = P.ProdutoID
+GROUP BY P.Nome, P.Estoque
+ORDER BY TotalVendido DESC;
+```
+
+
+
 
 
