@@ -3,14 +3,12 @@ DER (Diagrama Entidade-Relacionamento) para um sistema de PDV (Ponto de Venda) c
 ## Entidades
 1.	### Cliente: Armazena informações dos clientes.
 	• Cliente (ClienteID, Nome, CPF, Telefone, Email) Um cliente pode realizar várias compras.
-3.	### Venda (VendaID, ClienteID, DataVenda, TotalVenda)
-4.	• Venda: Registra as transações de vendas.
-       • Uma venda pertence a um cliente.
-5.	### Produto (ProdutoID, Nome, Preço, Estoque)
-6.	Produto: Contém os produtos disponíveis.
-       • Produtos são vendidos em múltiplas vendas.
-7.	### ItemVenda (ItemVendaID, VendaID, ProdutoID, Quantidade, Subtotal)
-       • Representa os produtos vendidos em cada venda.
+2.	### Venda: Registra as transações de vendas.
+        • Venda (VendaID, ClienteID, DataVenda, TotalVenda) Registra as transações de vendas.
+3.	### Produto: Contém os produtos disponíveis.
+        • Produto (ProdutoID, Nome, Preço, Estoque) Contém os produtos disponíveis.
+4.	### ItemVenda: Relaciona produtos vendidos dentro de cada venda.
+	• ItemVenda (ItemVendaID, VendaID, ProdutoID, Quantidade, Subtotal) Relaciona produtos vendidos dentro de cada venda.
 ## Relacionamentos
 Modelo relacional das tabelas normalizadas até a Terceira Forma Normal (3FN), garantindo que não há redundância e que todas as dependências funcionais estão devidamente organizadas.
 
