@@ -21,8 +21,3 @@ Modelo relacional das tabelas normalizadas até a Terceira Forma Normal (3FN), g
 
 CREATE TABLE Cliente 
 (ClienteID INT IDENTITY(1,1) PRIMARY KEY,
-    Nome NVARCHAR(100) NOT NULL,
-    CPF CHAR(11) UNIQUE NOT NULL,
-    Telefone NVARCHAR(15),
-    Email NVARCHAR(100) UNIQUE
-);
