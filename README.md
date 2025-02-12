@@ -113,11 +113,11 @@ SELECT * FROM ItemVenda;
 ## Consultas SQL
 Aqui estão alguns exemplos de consultas SQL para obter dados combinando informações de múltiplas tabelas no SQL Server.
 ### Listar todas as vendas com os nomes dos clientes
+Essa consulta Exibe todas as vendas e o nome do cliente que realizou cada uma.
 ```sql
 SELECT V.VendaID, C.Nome AS Cliente, V.DataVenda, V.TotalVenda
 FROM Venda V
 JOIN Cliente C ON V.ClienteID = C.ClienteID;
 ```
-Essa consulta Exibe todas as vendas e o nome do cliente que realizou cada uma.
 
 
