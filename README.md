@@ -48,3 +48,17 @@ CREATE TABLE Venda (
     Estoque INT NOT NULL
 );
 ```
+4. ### ItemVenda
+```sql
+CREATE TABLE ItemVenda (
+    ItemVendaID INT IDENTITY(1,1) PRIMARY KEY,
+    VendaID INT NOT NULL,
+    ProdutoID INT NOT NULL,
+    Quantidade INT NOT NULL,
+    Subtotal DECIMAL(10,2) NOT NULL,
+    CONSTRAINT FK_ItemVenda_Venda FOREIGN KEY (VendaID)
+        REFERENCES Venda(VendaID) ON DELETE CASCADE,
+    CONSTRAINT FK_ItemVenda_Produto FOREIGN KEY (ProdutoID)
+        REFERENCES Produto(ProdutoID) ON DELETE CASCADE
+);
+```
