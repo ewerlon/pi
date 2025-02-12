@@ -110,4 +110,7 @@ SELECT * FROM Produto;
 SELECT * FROM Venda;
 SELECT * FROM ItemVenda;
 ```
+### Consultas SQL
+Aqui estão alguns exemplos de consultas SQL para obter dados combinando informações de múltiplas tabelas no SQL Server.
+### Listar todas as vendas com os nomes dos clientes
 
