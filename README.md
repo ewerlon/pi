@@ -2,9 +2,7 @@
 DER (Diagrama Entidade-Relacionamento) para um sistema de PDV (Ponto de Venda) com pelo menos quatro entidades. O cenário escolhido envolve a venda de produtos, relacionando clientes, vendas e itens de venda.
 ## Entidades
 1.	### Cliente: Armazena informações dos clientes.
-	• Cliente (ClienteID, Nome, CPF, Telefone, Email)
-
-          Um cliente pode realizar várias compras.
+	• Cliente (ClienteID, Nome, CPF, Telefone, Email) Um cliente pode realizar várias compras.
 3.	### Venda (VendaID, ClienteID, DataVenda, TotalVenda)
 4.	• Venda: Registra as transações de vendas.
        • Uma venda pertence a um cliente.
