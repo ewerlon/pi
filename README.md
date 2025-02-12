@@ -102,5 +102,12 @@ INSERT INTO ItemVenda (VendaID, ProdutoID, Quantidade, Subtotal) VALUES
 (4, 5, 1, 10.10).  -- Paulo Jefferson comprou 1 Coca-Cola 2L
 (5, 6, 1, 10.00);  -- Tomás Kangaza comprou 1 Fanta Laranja 2L
 ```
-
+## Verificando os Dados
+Após executar as inserções, você pode visualizar os registros usando os comandos abaixo:
+```sql
+SELECT * FROM Cliente;
+SELECT * FROM Produto;
+SELECT * FROM Venda;
+SELECT * FROM ItemVenda;
+```
 
